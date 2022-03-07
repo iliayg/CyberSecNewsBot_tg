@@ -21,7 +21,6 @@ def new_user():
         update_id = entry['update_id']
         new_user_id = entry['message']['from']['id']
         first_name = entry['message']['from']['first_name']
-        username = entry['message']['from']['username']
         date = entry['message']['date']
 
         user_id = []
@@ -38,7 +37,6 @@ def new_user():
                 "update_id": update_id,
                 "message_id": message_id,
                 "first_name": first_name,
-                "username": username,
                 "date": date
             }
         users.append(users_dict)
